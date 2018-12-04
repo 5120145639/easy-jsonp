@@ -1,4 +1,4 @@
-# my-jsonp
+# easy-jsonp
 jsonp跨域实现
 # 使用方法
 ```
