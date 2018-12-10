@@ -37,4 +37,3 @@ callback = {
     id: callback函数名（默认为__jp + time）
 }
 ```
-
