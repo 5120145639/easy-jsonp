@@ -1,5 +1,17 @@
 # easy-jsonp
 jsonp跨域实现
+## 使用方法
+```
+jsonp({
+    url,
+    params: data,
+    callback: {
+        key: 'jsonpCallback'
+    }
+}).then((res) => {
+    console.log(res.data)
+})
+```
 ## 传入参数值
 以qq音乐手机版官网的轮播图url请求为例
 ```
@@ -21,19 +33,8 @@ const data = {
 callback 是个对象包含两个属性
 ```
 callback = {
-    key: 
-    id: 
+    key: callback函数对应的key值
+    id: callback函数名（默认为__jp + time）
 }
 ```
-## 使用方法
-```
-jsonp({
-    url,
-    params: data,
-    callback: {
-        key: 'jsonpCallback'
-    }
-}).then((res) => {
-    console.log(res.data)
-})
-```
+
